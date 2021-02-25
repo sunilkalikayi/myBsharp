@@ -44,11 +44,14 @@ class App extends React.Component {
           Minimum so added another line to make it 4.
          </Text>
        </View>
-       <View style={styles.flex}>
-       <Button style={styles.button} title="Register" color="#292629"/>
-       <Button style={styles.button} title="Teacher" color="#fff"/>
+       <View style={styles.flex} >
+         <Text style={styles.registerBtn}>Register</Text>
+         <Text style={styles.teacherBtn}>Teacher</Text>
+
          
        </View>
+       
+
        
     </View>
     );
@@ -63,15 +66,16 @@ const styles= StyleSheet.create({
     height:523,
     width:'85%',
     margin:10,
-    borderWidth:0.1,
-    borderColor:'grey',
+    borderWidth:0.2,
+    borderColor:'lightgrey',
+    borderRadius:10,
     alignContent:'center',
     margin:25
   },
   image:{
     width:'100%',
     height:295,
-    backgroundColor:"grey",
+    backgroundColor:"lightgrey",
     justifyContent:'center',
     borderTopStartRadius:15,
     borderTopRightRadius:15,
@@ -108,7 +112,7 @@ const styles= StyleSheet.create({
   },
   courseCost:{
     fontSize:9,
-    left:150,
+    left:125,
     marginTop:5,
     color:'#292629'
 
@@ -124,17 +128,34 @@ const styles= StyleSheet.create({
 
 
   },
-
-  button:{
-    marginTop:20,
-    height:28,
-    width:82,
-    textAlign:'center',
-    borderRadius:6,
+ 
+  registerBtn:{
+    color:'#fff',
     fontSize:11,
     fontFamily:'Poppins',
-    textTransform:'capitalize',
+    height:28,
+    width:82,
+    backgroundColor:'#292929',
+    borderRadius:6,
+    textAlign:'center',
+    textAlignVertical:'center',
 
-     
-  }
+
+  },
+  teacherBtn:{
+    color:'#292929',
+    fontSize:11,
+    fontFamily:'Poppins',
+    height:28,
+    width:82,
+    backgroundColor:'#EEEEEE',
+    left:5,
+    borderRadius:6,
+    textAlign:'center',
+    textAlignVertical:'center',
+
+    
+
+  },
+  
 })
